@@ -1,23 +1,22 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { Star, Clock, Users, CheckCircle } from 'lucide-react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Star, Clock, Users, CheckCircle } from 'lucide-react';
 
 export default function Hero() {
   const benefits = [
-    "Desinchar em 7 dias",
-    "Emagrecer com leveza",
-    "Regular o intestino",
-    "Reduzir celulites",
-    "Melhorar metabolismo"
-  ]
+    'Desinchar em 7 dias',
+    'Emagrecer com leveza',
+    'Regular o intestino',
+    'Reduzir celulites',
+    'Melhorar metabolismo',
+  ];
 
   return (
     <section id="hero" className="relative min-h-screen bg-gradient-to-br from-neutral via-white to-neutral pt-20">
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5"></section>
-      
+      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-accent/5"></div>
+
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
           <motion.div
             className="text-center lg:text-left"
             initial={{ opacity: 0, x: -50 }}
@@ -32,7 +31,7 @@ export default function Hero() {
             >
               <Star className="w-4 h-4 mr-2 text-yellow-500" />
               Protocolo Aprovado por 15 mil mulheres
-            </div>
+            </motion.div>
 
             <motion.h1
               className="text-4xl md:text-5xl xl:text-6xl font-bold leading-tight mb-6"
@@ -42,7 +41,8 @@ export default function Hero() {
             >
               Transforme seu corpo em{' '}
               <span className="gradient-text">7 dias</span>
-              <br />
+                
+
               Mais Leve, Saudável e Feliz!
             </motion.h1>
 
@@ -52,8 +52,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
             >
-              Você acorda se sentindo estufada? A calça aperta, a barriga parece pesada, o intestino não ajuda? 
-              <strong className="text-primary"> O Protocolo Desinchar</motion.p> foi criado para isso.
+              Você acorda se sentindo estufada? A calça aperta, a barriga parece pesada, o intestino não ajuda?
+              <strong className="text-primary"> O Protocolo Desinchar</strong> foi criado para isso.
             </motion.p>
 
             <motion.div
@@ -90,7 +90,7 @@ export default function Hero() {
               >
                 QUERO COMEÇAR HOJE
               </motion.a>
-              
+
               <motion.div
                 className="flex items-center justify-center space-x-3 text-gray-600"
                 whileHover={{ scale: 1.05 }}
@@ -123,9 +123,9 @@ export default function Hero() {
               <motion.div
                 className="absolute inset-0 bg-gradient-primary rounded-3xl transform rotate-3"
                 animate={{ rotate: [3, -3, 3] }}
-                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              ></div>
-              
+                transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+              ></motion.div>
+
               <motion.img
                 src="https://qotdwocbcoirjlqjkjhq.supabase.co/storage/v1/object/public/user-files/ad5c31a2-f045-4f97-a0ab-2d4f0e6a69e7/1754612425649_fbjqxxg23la_Design-sem-nome-2024-12-16T142539.731.webp"
                 alt="Protocolo Desinchar - Transformação em 7 dias"
@@ -133,11 +133,11 @@ export default function Hero() {
                 whileHover={{ y: -10 }}
                 transition={{ duration: 0.3 }}
               />
-              
+
               <motion.div
                 className="absolute -top-4 -right-4 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold text-sm shadow-lg z-20"
                 animate={{ y: [-5, 5, -5] }}
-                transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
               >
                 🔥 RESULTADOS EM 7 DIAS
               </motion.div>
@@ -152,7 +152,7 @@ export default function Hero() {
               <div className="text-center">
                 <h3 className="font-bold text-lg mb-2">Garantia de 7 dias</h3>
                 <p className="text-gray-600 text-sm">100% do seu investimento de volta se não ficar satisfeita!</p>
-              </p>
+              </div>
             </motion.div>
           </motion.div>
         </div>
@@ -166,7 +166,7 @@ export default function Hero() {
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-pulse"></div>
         </div>
-      </div>
+      </motion.div>
     </section>
-  )
+   );
 }

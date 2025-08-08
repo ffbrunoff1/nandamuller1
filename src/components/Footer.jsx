@@ -1,13 +1,12 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { Instagram, Heart } from 'lucide-react'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Instagram, Heart } from 'lucide-react';
 
-export default function Footer() {
+export default function Footer( ) {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-4 gap-8">
-          
           <motion.div
             className="md:col-span-2"
             initial={{ opacity: 0, y: 30 }}
@@ -22,12 +21,11 @@ export default function Footer() {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             />
-            
+
             <p className="text-gray-300 mb-6 max-w-md">
-              Transformando vidas através da nutrição há mais de 20 anos. 
-              O Protocolo Desinchar é o resultado de anos de experiência e mais de 15 mil mulheres transformadas.
-            </footer>
-            
+              Transformando vidas através da nutrição há mais de 20 anos. O Protocolo Desinchar é o resultado de anos de experiência e mais de 15 mil mulheres transformadas.
+            </p>
+
             <div className="flex space-x-4">
               <motion.a
                 href="https://instagram.com/nandamuller"
@@ -38,8 +36,8 @@ export default function Footer() {
                 whileTap={{ scale: 0.9 }}
               >
                 <Instagram className="w-5 h-5" />
-              </div>
-            </motion.a>
+              </motion.a>
+            </div>
           </motion.div>
 
           <motion.div
@@ -54,22 +52,22 @@ export default function Footer() {
                 <span className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer">
                   Cardápio 7 dias
                 </span>
-              </span>
+              </li>
               <li>
                 <span className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer">
                   Treinos Metabólicos
                 </span>
-              </span>
+              </li>
               <li>
                 <span className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer">
                   Aula Explicativa
                 </span>
-              </span>
+              </li>
               <li>
                 <span className="text-gray-300 hover:text-primary transition-colors duration-300 cursor-pointer">
                   Garantia 7 dias
                 </span>
-              </span>
+              </li>
             </ul>
           </motion.div>
 
@@ -83,19 +81,19 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <span className="text-gray-300">✨ Desinchar em 7 dias</span>
-              </span>
+              </li>
               <li>
                 <span className="text-gray-300">⚡ Emagrecer com leveza</span>
-              </span>
+              </li>
               <li>
                 <span className="text-gray-300">🌿 Regular intestino</span>
-              </span>
+              </li>
               <li>
                 <span className="text-gray-300">💪 Melhorar metabolismo</span>
-              </span>
+              </li>
               <li>
                 <span className="text-gray-300">❤️ Reduzir celulites</span>
-              </span>
+              </li>
             </ul>
           </motion.div>
         </div>
@@ -111,7 +109,7 @@ export default function Footer() {
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
               © 2025 Copyright | Todos os direitos reservados | CNPJ 33.373.007.0001/08
             </div>
-            
+
             <motion.div
               className="flex items-center space-x-2 text-gray-400 text-sm"
               whileHover={{ scale: 1.05 }}
@@ -126,7 +124,7 @@ export default function Footer() {
                 className="italic text-primary hover:text-accent transition-colors duration-300"
               >
                 Papum
-              </span>
+              </a>
             </motion.div>
           </div>
         </motion.div>
@@ -146,12 +144,12 @@ export default function Footer() {
           >
             TRANSFORME SEU CORPO AGORA
           </motion.a>
-          
+
           <p className="text-gray-400 text-sm mt-4">
             Você merece se olhar no espelho e se sentir incrível. Comece hoje!
           </p>
         </motion.div>
       </div>
     </footer>
-  )
+   );
 }
